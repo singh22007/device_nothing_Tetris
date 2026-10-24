@@ -470,5 +470,18 @@
      <bool name="config_supportSmartPixels">true</bool>
     <!-- Show volume panel on the left side -->
      <bool name="config_audioPanelOnLeftSide">true</bool>
+
+    <?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Force expose HDR capabilities (2=HDR10, 3=HLG, 4=HDR10+) to apps -->
+    <integer-array name="config_defaultHdrTypes">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+
+    <!-- Enable Wide Color Gamut rendering -->
+    <bool name="config_enableWideColorGamut">true</bool>
+</resources>
     
 </resources>
