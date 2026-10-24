@@ -152,6 +152,17 @@
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
+         <EncoderProfile quality="720p60" fileFormat="mp4">
+        <Video codec="h264"
+               bitRate="14000000"
+               width="1280"
+               height="720"
+               frameRate="60" />
+        <Audio codec="aac"
+               bitRate="256000"
+               sampleRate="48000"
+               channels="2" />
+    </EncoderProfile>
         <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="20000000"
@@ -163,17 +174,29 @@
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
-        <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
+         <!-- NEW: 1080p 60fps Profile -->
+    <EncoderProfile quality="1080p60" fileFormat="mp4">
             <Video codec="h264"
-                   bitRate="50000000"
-                   width="3840"
-                   height="2160"
-                   frameRate="30" />
+                   bitRate="30000000"
+                   width="1920"
+                   height="1080"
+                   frameRate="60" />
             <Audio codec="aac"
                    bitRate="256000"
                    sampleRate="48000"
                    channels="2" />
         </EncoderProfile>
+       <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
+            <Video codec="hevc"
+                   bitRate="48000000"
+                   width="3840"
+                   height="2160"
+                   frameRate="30" />
+           <Audio codec="aac"
+                   bitRate="128000"
+                   sampleRate="48000"
+                   channels="2" />
+          </EncoderProfile>
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="1000000"
@@ -1558,17 +1581,7 @@
                    bitRate="256000"
                    sampleRate="48000"
                    channels="2" />
-        </EncoderProfile>
-          <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
-            <Video codec="hevc"
-                   bitRate="48000000"
-                   width="3840"
-                   height="2160"
-                   frameRate="30" />
-            <Audio codec="aac"
-                   bitRate="128000"
-                   sampleRate="48000"
-                   channels="2" />
+    
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="1000000"
