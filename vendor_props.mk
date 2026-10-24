@@ -199,6 +199,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.mtk_f2fs_enable=1 \
     ro.vendor.mtk_fd_support=1
 
+# Enable MediaTek MiraVision & Hardware HDR Video Path
+ro.vendor.mtk_hdr_video_support=1
+persist.vendor.sys.hdr.enable=1
+ro.surface_flinger.has_HDR_display=true
+
+# Force SurfaceFlinger to handle 10-bit / Wide Color buffers
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.use_color_management=true
+
+# Codec2 MediaTek Buffer Overrides
+vendor.mediacodec.binder.size=2097152
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.game_default_frame_rate_override=120 \
